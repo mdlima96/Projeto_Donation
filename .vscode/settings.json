@@ -1,5 +1,5 @@
 {
-    "maven.view": "hierarchical",
+    "maven.view": "flat",
     "workbench.colorTheme": "Default Dark+",
     "java.jdt.ls.java.home": "C:\\Users\\jose.filho_nimbi\\Java\\jdk-17.0.4.1",
     "workbench.iconTheme": "vscode-icons",
