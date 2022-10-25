@@ -1,1 +1,1 @@
-web: java -jar target/Projeto_Donation.jar
+web: java -Dserver.port=$PORT -jar target/Projeto_Donation.jar
