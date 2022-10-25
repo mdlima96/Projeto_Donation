@@ -70,29 +70,33 @@
         <groupId>com.microsoft.azure</groupId>  
         <artifactId>azure-webapp-maven-plugin</artifactId>  
         <version>2.5.0</version>  
-        <configuration>
-          <schemaVersion>v2</schemaVersion>
-          <subscriptionId>7d85efaa-4959-43ff-a484-f7cb9ae141a4</subscriptionId>
-          <resourceGroup>itemdonation-1666590494574-rg</resourceGroup>
-          <appName>itemdonation-1666590494574</appName>
-          <pricingTier>P1v2</pricingTier>
-          <region>centralus</region>
-          <runtime>
-            <os>Windows</os>
-            <javaVersion>Java 11</javaVersion>
-            <webContainer>Java SE</webContainer>
-          </runtime>
-          <deployment>
-            <resources>
-              <resource>
-                <directory>${project.basedir}/target</directory>
-                <includes>
-                  <include>*.jar</include>
-                </includes>
-              </resource>
-            </resources>
-          </deployment>
-        </configuration>
+        <configuration> 
+          <schemaVersion>v2</schemaVersion>  
+          <subscriptionId>7d85efaa-4959-43ff-a484-f7cb9ae141a4</subscriptionId>  
+          <resourceGroup>itemdonation-1666590494574-rg</resourceGroup>  
+          <appName>itemdonation-1666590494574</appName>  
+          <pricingTier>P1v2</pricingTier>  
+          <region>centralus</region>  
+          <runtime> 
+            <os>Windows</os>  
+            <javaVersion>Java 17</javaVersion>  
+            <webContainer>Java SE</webContainer> 
+          </runtime>  
+          <deployment> 
+            <resources> 
+              <resource> 
+                <directory>${project.basedir}/target</directory>  
+                <includes> 
+                  <include>*.jar</include> 
+                </includes> 
+              </resource> 
+            </resources> 
+          </deployment>  
+          <deploymentSlot> 
+            <name>itemdonation-1666590494574-slot</name>  
+            <configurationSource/> 
+          </deploymentSlot> 
+        </configuration> 
       </plugin> 
     </plugins> 
   </build> 
